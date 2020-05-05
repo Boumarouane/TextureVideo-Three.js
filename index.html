@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="play">
+        <div>
+            <button id="startButton">Click to Play</button>
+        </div>
+    </div>
+
+    <div id="canvas"></div>
+
+    <video id="video" loop crossOrigin="anonymous" playsinline style="display:none">
+        <source src="Vjing.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    </video>
+
+    <video id="sphereVideo" loop crossOrigin="anonymous" playsinline style="display:none">
+        <source src="sphere.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    </video>
+
+    <script src="three.min.js"></script>
+    <script src="OrbitControls.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
